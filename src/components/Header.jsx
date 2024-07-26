@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,28 +10,38 @@ const Header = () => {
             alt="NetFuse-logo"
             className="w-12 h-12 "
           />
-          <h1 className="text-lightPrimary font-bold text-2xl">NetFuse</h1>
+          <Link to={"/"}>
+            <h1 className="text-lightPrimary font-bold text-2xl">NetFuse</h1>
+          </Link>
         </div>
         <nav>
           <ul className="flex gap-x-6 font-semibold text-gray-300 pe-5">
-            <li
-              className="hover:text-neutral hover:cursor-pointer"
-              title="go to home"
-            >
-              Home
-            </li>
-            <li
-              className="hover:text-neutral hover:cursor-pointer"
-              title="go to about"
-            >
-              About Us
-            </li>
-            <li
-              className="hover:text-neutral hover:cursor-pointer"
-              title="send us a message"
-            >
-              Contact Us
-            </li>
+            <Link to={"/"}>
+              <li
+                className="hover:text-neutral hover:cursor-pointer"
+                title="go to home"
+              >
+                Home
+              </li>
+            </Link>
+
+            <Link to={"/about"}>
+              <li
+                className="hover:text-neutral hover:cursor-pointer"
+                title="go to about"
+              >
+                About Us
+              </li>
+            </Link>
+
+            <Link to={"/contact"}>
+              <li
+                className="hover:text-neutral hover:cursor-pointer"
+                title="send us a message"
+              >
+                Contact Us
+              </li>
+            </Link>
           </ul>
         </nav>
       </header>
