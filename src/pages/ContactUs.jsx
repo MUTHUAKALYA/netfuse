@@ -100,7 +100,7 @@ const ContactUs = () => {
               </span>
             </div>
           </div>
-          <div className="mt-3">
+          {/* <div className="mt-3">
             <p className="font-semibold">Follow our social media</p>
             <div className="flex gap-x-3 my-2">
               <FaPinterestP className="bg-cyan-800 text-white w-8 h-8 rounded-full p-2" />
@@ -108,7 +108,7 @@ const ContactUs = () => {
               <FaTwitter className="bg-cyan-800 text-white w-8 h-8 rounded-full p-2" />
               <FaInstagram className="bg-cyan-800 text-white w-8 h-8 rounded-full p-2" />
             </div>
-          </div>
+          </div> */}
         </section>
         <section className="sm:w-[60%]  p-4 sm:p-10 ">
           <h1 className="text-cyan-800 font-black text-2xl ">
