@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-darkSecondary p-5 py-10">
-      <section className="flex gap-x-16 items-start justify-evenly pb-6">
+      <section className="flex flex-col sm:flex-row gap-y-6 sm:gap-y-0 gap-x-16 items-start justify-evenly pb-6">
         <div className="w-[240px] ">
           <div className="flex text-red-300 items-center ">
             <img
