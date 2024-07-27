@@ -110,7 +110,7 @@ const Footer = () => {
               ></path>
             </svg>
             <span className="font-extralight text-md text-gray-500">
-              writeurquires@netfuse.com
+              writeurqueries@netfuse.com
             </span>
           </div>
           <div className="flex gap-x-2 items-center">
