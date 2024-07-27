@@ -27,8 +27,8 @@ const ContactUs = () => {
   };
   return (
     <>
-      <section className="flex  items-center  bg-white m-10 rounded-lg border-gray-400 shadow-md shadow-gray-400 w-[70%] mx-auto">
-        <section className="space-y-3 bg-gray-50 w-[40%] p-10">
+      <section className="flex flex-col sm:flex-row items-cente sm:justify-centerr  bg-white sm:m-10 rounded-lg border-gray-400 shadow-md shadow-gray-400 sm:w-[70%] sm:mx-auto">
+        <section className="space-y-3 bg-gray-50 sm:w-[40%] p-10">
           <h5 className="text-red-300 font-bold text-xl ">Get In Touch</h5>
           <p className="font-normal  text-gray-500 text-justify">
             Curious about how we can transform your online presence ? Get in
@@ -110,7 +110,7 @@ const ContactUs = () => {
             </div>
           </div>
         </section>
-        <section className="w-[60%]   p-10 ">
+        <section className="sm:w-[60%]  p-4 sm:p-10 ">
           <h1 className="text-cyan-800 font-black text-2xl ">
             Send Us A Message
           </h1>
@@ -121,12 +121,12 @@ const ContactUs = () => {
           {/* contact form */}
 
           <form
-            className=" my-6 space-y-8 bg-white py-5 rounded-lg"
+            className=" sm:my-6 sm:space-y-8 bg-white pt-5 rounded-lg"
             onSubmit={handleSubmit(sendInfo)}
           >
-            <section className="flex gap-x-4">
+            <section className="flex flex-col sm:flex-row sm:gap-x-4">
               {/* first name */}
-              <div className="w-[50%]">
+              <div className="mt-4 sm:mt-0 sm:w-[50%]">
                 <div
                   className={`flex justify-center items-center pb-2 gap-x-2  ${
                     errors.firstName
@@ -161,7 +161,7 @@ const ContactUs = () => {
                 )}
               </div>
               {/* last name */}
-              <div className="w-[50%]">
+              <div className="mt-4 sm:mt-0 sm:w-[50%]">
                 <div
                   className={`flex justify-center items-center pb-2 gap-x-2  ${
                     errors.lastName
@@ -195,9 +195,9 @@ const ContactUs = () => {
                 )}
               </div>
             </section>
-            <section className="flex gap-x-4">
+            <section className="flex flex-col sm:flex-row sm:first-line:gap-x-4">
               {/* email address */}
-              <div className="w-[50%]">
+              <div className="mt-4 sm:mt-0 sm:w-[50%]">
                 <div
                   className={`flex justify-center items-center pb-2 gap-x-2  ${
                     errors.email
@@ -229,7 +229,7 @@ const ContactUs = () => {
                 )}
               </div>
               {/* phone number */}
-              <div className="w-[50%]">
+              <div className="mt-4 sm:mt-0 sm:w-[50%]">
                 <div
                   className={`flex justify-center items-center pb-2 gap-x-2  ${
                     errors.phoneNumber
@@ -268,7 +268,7 @@ const ContactUs = () => {
             {/* password field */}
             <div
               className={`flex justify-center items-center pb-2 gap-x-2 ${
-                errors.password
+                errors.message
                   ? "  border-b  border-red-600"
                   : "  border-b  border-gray-400"
               }`}
