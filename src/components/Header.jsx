@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="bg-darkSecondary flex justify-between items-center p-2 px-10">
+      <header className="bg-darkSecondary flex flex-col sm:flex-row justify-between items-center p-2 px-5 sm:px-10">
         <div className="flex items-center ">
           <img
             src="public/logo.png"
@@ -15,7 +15,7 @@ const Header = () => {
           </Link>
         </div>
         <nav>
-          <ul className="flex gap-x-10 font-semibold text-gray-400 pe-5">
+          <ul className="flex gap-x-6 sm:gap-x-10 font-semibold text-gray-400 pe-5 my-3 sm:my-0">
             <Link to={"/"}>
               <li
                 className="hover:text-neutral hover:cursor-pointer"
